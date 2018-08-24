@@ -27,6 +27,7 @@ class Application
 
       if @@items.include?(add_term)
         @@cart << add_term
+        resp.write "added #{add_term}"
       else
         resp.write "Item not found."
       end

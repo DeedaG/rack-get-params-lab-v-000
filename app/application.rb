@@ -26,7 +26,8 @@ class Application
       add_term = req.params["item"]
       resp.write handle_add(add_term)
 
-  #    if @@items.include?(search_term)
+      if @@items.include?(add_term)
+        @@cart << add_term
   #            resp.write "#{search_term} is one of our items"
   #          else
   #            resp.write "Couldn't find #{search_term}"

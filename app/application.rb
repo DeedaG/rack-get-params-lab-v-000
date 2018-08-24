@@ -29,7 +29,7 @@ class Application
         @@cart << add_term
         resp.write "added #{add_term}"
       else
-        resp.write "Item not found."
+        resp.write "We don't have that item."
       end
 
     else

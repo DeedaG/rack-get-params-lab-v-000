@@ -19,7 +19,7 @@ class Application
       resp.write "We don't have that item."
       elsif @@cart.empty? != true
         @@cart.each do |purchase|
-          resp.write "#{purchase}\n"
+          resp.write "added #{purchase}\n"
         end
       end
     elsif req.path.match(/add/)

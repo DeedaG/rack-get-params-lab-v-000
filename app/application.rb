@@ -24,7 +24,6 @@ class Application
       end
     elsif req.path.match(/add/)
       add_term = req.params["item"]
-      resp.write handle_add(add_term)
 
       if @@items.include?(add_term)
         @@cart << add_term

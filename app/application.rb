@@ -20,7 +20,7 @@ class Application
     elsif @@cart.empty? != true
       @@cart.each do |purchase|
           resp.write "#{purchase}\n"
-
+        end
     else
       resp.write "Path Not Found"
     end
